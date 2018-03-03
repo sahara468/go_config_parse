@@ -172,7 +172,7 @@ func main() {
 			fileConfig.PrintSection(fileConfig.Sections[t].Name)
 		}
 	} else {
-		keyValSlice := strings.SplitN(configKey, ".", 2)
+		keyValSlice := strings.SplitN(configKey, ".", 2) 
 		if len(keyValSlice) != 2 {
 			var temp []string
 			keyValSlice = append(temp, "DEFAULT", keyValSlice[0])
